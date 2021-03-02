@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Application Form" content="html form tutorial">
+        <meta name="keywords" content="HTML">
+        <meta name="author" content="Abhishek Tiwari">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Application Form</title>
+        <style>
+            fieldset{
+                background-color: cadetblue;
+            }
+            h1{
+                text-align: center;
+                color: crimson;
+            }
+            legend{
+            
+                font-size: xx-large;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Travelling Application Form</h1>
+        <form action="">
+            <fieldset>
+                <legend>Personalia:</legend>
+                <label for="fname">Enter First Name:</label><br>
+                <input type="text" name="fname" id="fname" placeholder="first name"><br><br>
+                <label for="lname">Enter Last Name:</label><br>
+                <input type="text" name="lname" id="lname" placeholder="last name"><br><br>
+                <label for="email">Enter Your Email:</label><br>
+                <input type="email" name="email" id="email" required placeholder="email"><br><br>
+                <label for="password">Enter Your Password:</label><br>
+                <input type="password" name="password" id="password" placeholder="password"><br><br>
+                <label for="phone">Enter Your Phone Number:</label><br>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="phone number"><br><br>
+                <label for="birthday">Your Birthday Date:</label><br>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label><br><br>
+                <label for="file">Choose Your File:</label><br>
+                <input type="file" name="file" id="file"><br><br>
+                <label for="visitedPlace">Enter Number Of Place:</label><br>
+                <input type="number" name="visitedPlace" id="visitedPlace" min="1" max="20"><br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </body>
+</html>
